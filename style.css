@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgb(234, 233, 243), rgb(226, 227, 255));
+    background-repeat: no-repeat; /* repetir fondo? = no se repita */
+    background-size: cover; /* es el tamaño del fondo */
+    height: 100vh; /*vh = visual height = altura visual de la página */
+}
+
+/* NAV - Barra de navegación */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinear verticalmente si la direccion del flex es row */
+    justify-content: space-between; /* Justificar el contenido de forma horizontal */ 
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logotipo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono{
+    height: 50px;
+}
+
+.nombre{
+    font-size: 30px;
+    color: #0174DF;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+}  /* " ''  " */
+
+.menu, a{
+    display: flex;
+    gap: 20px;
+    list-style: none; /*Eliminamos los bullets de la lista */
+    color: blueviolet;
+    font-size: large;
+    text-decoration: none;
+    align-items: center;
+}
+/* MAIN */
+.pag_principal{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.perrito{
+    width: 400px;
+}
+
+.texto h1{
+    color: blueviolet;
+}
+
+.texto h2{
+    color: rgb(88, 88, 88);
+    margin-bottom: 15px;
+}
+
+.botones{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.btn{
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.principal{
+    background-color: rgb(249, 187, 79);
+    font-weight: bold;
+}
+
+.secundario{
+    /* border: 2px solid blueviolet; */
+    outline: 2px solid blueviolet;
+    outline-offset: -2px;
+    background-color: white;
+}
+
+/* PAGINA ADOPTAR */
+
+.adoptar{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.fila{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    flex: 1/4;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.img_tarjeta{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.nombre_mascota{
+    text-align: center;
+}
+
+.columna h2{
+    color: rgb(75, 75, 75);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titular{
+    color: blueviolet;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Faltó ver en clase */
+
+.tarjeta p{
+    margin-left: 10px;
+    color: rgb(75, 75, 75);
+}
+
+.tarjeta h2{
+    color: blueviolet;
+    margin: 10px 0;
+}
